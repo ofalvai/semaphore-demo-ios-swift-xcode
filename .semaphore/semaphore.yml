@@ -37,7 +37,7 @@ blocks:
       jobs:
         - name: Build
           commands:
-            - bundle exec xcversion select 12.2
+            - bundle exec xcversion select 12.4
             - bundle exec fastlane build
   - name: Take screenshots
     task:
@@ -54,7 +54,7 @@ blocks:
       jobs:
         - name: Screenshots
           commands:
-            - bundle exec xcversion select 12.2
+            - bundle exec xcversion select 12.4
             - xcrun simctl list
             - bundle exec fastlane screenshots
             - artifact push job screenshots
