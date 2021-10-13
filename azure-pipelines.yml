@@ -17,5 +17,5 @@ steps:
   inputs:
     script: |
       xcode-select --install
-      bundle install --force
-      bundle exec fastlane test
+      bundle install
+      bundle exec fastlane ios test
